@@ -1,0 +1,317 @@
+html{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(140,0,29,1) 100%);
+    scroll-behavior: smooth;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+#navbar{
+    position: fixed;
+    top: 0%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.3em;
+    color: black;
+    border-bottom: 0.1em solid rgba(0, 0, 0, 0.226);
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-link {
+    position: relative;
+}
+  
+.nav-link::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 2px;
+background-color: rgb(0, 0, 0);
+transform: scaleX(0);
+transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+transform: scaleX(1);
+}
+
+.introducao{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(140,0,29,1) 100%);
+    padding: 1%;
+    /* padding-top: 13em; */
+    padding-top: 25vh;
+    height: 100vh;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+section{ 
+    text-align: center;
+}
+
+.introducao .texto{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: black;
+    animation: fadeIn 3s ;
+    z-index: 500;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: black;
+}
+
+.introducao section img{
+    width: 20em;
+    border-radius: 50%;
+    border: 0.3em solid rgba(0, 0, 0, 0.212);
+    margin: 2em 0 2.5em 0;
+    transition: 0.7s;
+    animation: fadeIn 2.5s;
+    z-index: 500;
+}
+
+.introducao img:hover{
+    transform: scale(1.2);
+}
+
+.skills{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(140,0,29,1) 100%);
+}
+
+#carrousel{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(140,0,29,1) 100%);
+    /* padding-top: 40vh; */
+    padding-bottom: 1em;
+    z-index: 500;
+    animation: fadeIn 2.5s;
+    
+}
+
+#carrousel img{
+    width: fit-content;
+    height: 100vh;
+    /* height: 58.7em; */
+}
+
+.cards{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(140,0,29,1) 100%);
+    display: flex;
+}
+
+
+
+summary::marker{
+    color: transparent;
+}
+
+summary {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.code{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    background-color: black;
+    width: 50%;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 10vw;
+    border-radius: 20px;
+    margin-inline: 10em;
+}
+
+.code a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.code ul{
+    padding-inline: 4.5rem;
+}
+
+.code ul li{
+    padding: 1.5em;
+    width: 100%;
+}
+
+ul img{
+    width: 2em;
+    background-color: transparent;
+    background-position: cover;
+}
+
+.estudo{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    background-color: black;
+    width: 50%;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 10vw;
+    border-radius: 20px;
+    margin-inline: 10em;
+    padding-bottom: 0;
+}
+
+.estudo ul{
+    padding-inline: 4.5rem;
+}
+
+.estudo ul li{
+    padding: 1.5em;
+    width: 100%;
+}
+
+.estudo a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+
+.curiosidade{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(140,0,29,1) 100%);
+    width: 100%;
+}
+
+.caixa{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(140,0,29,1) 100%);
+    padding-top: 10em;
+    padding-bottom: 10em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caixa .content{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    background-color: black;
+    width: 14em;
+    height: auto;
+    border-radius: 15px;
+    padding: 2%;
+    box-shadow: 5px 10px 20px black;
+    
+}
+
+.caixa .content img{
+    width: 10em;
+    height: 13em;
+    object-fit: cover;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content .texto{
+    padding-top: 10%;
+    padding-left: 0;
+}
+
+.content .texto ul{
+    padding-inline: 0%;
+}
+
+.content .texto li{
+    text-align: center;
+}
+
+.content .texto a{
+    text-decoration: none;
+    color: white;
+}
+
+.anchor {
+    position: absolute;
+    transform: translateY(-50vh);
+}
+
+.image-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    background: black;
+}
+  
+.image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(140,0,29,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer{
+    background-color: black;
+    width: 90%;
+    height: 50vh;
+    text-align: center;
+    padding: 5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2.3em;
+    color: white;
+    bottom: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul img {
+    width: 2em;
+    margin-inline: 0.5em;
+}
+
+footer li {
+    display: inline-block;
+    width: 33.33%;
+    padding: 1%;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+}
